@@ -39,7 +39,7 @@ public class Screen{
 
 	//set pixel
 	public void setPixel(int x, int y, vec3 color){
-		img.setRGB(Mat.clamp(0, xSize-1, x), Mat.clamp(0, ySize-1,ySize-y-1), colorPoint(color.mult(255)));
+		img.setRGB(Mat.clamp(0, xSize-1, x), Mat.clamp(0, ySize-1,ySize-y-1), colorPoint(color));
 	}
 	//show image
 	public void show(){
